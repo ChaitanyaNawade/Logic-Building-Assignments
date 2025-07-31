@@ -1,12 +1,11 @@
 //////////////////////////////////////////////////
 ///
 ///File name:   program3.java
-///Description: Write the program which Accept Matrix and return the frequecny of number from  the Matrix  
+///Description: Write the program which Accept Matrix and display the addition of elements  from each column 
 ///Author :     Chaitanya prakash nawade
 ///Date   :     31/07/2025
 ///
 //////////////////////////////////////////////////
-
 import java.util.Scanner;
 
 class Matrix
@@ -52,33 +51,27 @@ class Matrix
         }
     }
 
-    public int CountFreq()
+    public int Summation()
     {
-        int i = 0 , j =0, iCount = 0;
-
-        System.out.println("Enter the number whose frequecny you want to count from array :");
-
-        Scanner sobj = new Scanner(System.in);
-
-        int iNo = sobj.nextInt();
+        int i = 0 , j =0, iSum1 = 0;
 
         for( i = 0 ; i < Arr.length ; i++)
         {
             for(j = 0 ; j < Arr.length ; j++)
             {
-                if(Arr[i][j] == iNo)
+                if(j == 0)
                 {
-                    iCount++;
+                    iSum = iSum + Arr[i][j];
                 }
             }
         }
 
-        return iCount;
+        return iSum;
 
     }
 }
 
-class Program2
+class Program4
 {
     public static void main(String A[])
     {
@@ -95,8 +88,8 @@ class Program2
 
         mobj.Accept();
         mobj.Display();
-        iRet = mobj.CountFreq();
+        iRet = mobj.Summation();
 
-        System.out.println("frequecny is : "+iRet);
+        System.out.println("Summation of first columns  is : "+iRet);
     }
 }
