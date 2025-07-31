@@ -57,6 +57,11 @@ class Matrix
                 {
                     iSum = iSum + Arr[i][j];
                 }
+                else
+                {
+                    System.out.println("matrix doesnt have diagonal");
+                    return 0;
+                }
             }
         }
         return iSum;
