@@ -29,13 +29,12 @@ class ArrayX
 
         boolean Found = false;
 
-        System.out.println("Elements in the range "+iStart+" "+iEnd+" are");
+        System.out.println("Elements in the range "+iStart+" to "+iEnd+" are");
         for(iCnt = 0; iCnt < Arr.length; iCnt++)
         {
             if(Arr[iCnt] >= iStart && Arr[iCnt] <= iEnd)
             {
                 System.out.println(Arr[iCnt]);
-                
                 Found = true;
             }
         }
