@@ -14,7 +14,7 @@ class Demo
     {
         boolean bFlag = false;
 
-        if(ch < 'A' || ch > 'Z' && ch < 'a' || ch > 'z' && ch < 0 || ch > 9 )
+        if(!((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9')))
         {
             bFlag = true;
         }
